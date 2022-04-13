@@ -1,0 +1,27 @@
+{
+  "name": "graphql-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./src/server/index.js",
+    "db:migration": "npx prisma migrate dev --schema src/server/db/prisma/schema.prisma --name init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiSilveira/graphql-project.git"
+  },
+  "author": "Thiago Silveira de Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiSilveira/graphql-project/issues"
+  },
+  "homepage": "https://github.com/ThiSilveira/graphql-project#readme",
+  "dependencies": {
+    "@prisma/client": "^3.12.0",
+    "apollo-server": "^3.6.7",
+    "graphql": "^16.3.0",
+    "nodemon": "^2.0.15"
+  }
+}
